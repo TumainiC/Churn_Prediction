@@ -51,7 +51,7 @@ Churn_Prediction/
 
 ```bash
 # Clone the repository (if using git)
-git clone 
+git clone https://github.com/TumainiC/Churn_Prediction.git
 cd Churn_Prediction
 
 # Create virtual environment
@@ -212,7 +212,7 @@ Use `churn_model_training.ipynb` to:
 - Deploy to production environment
 - Monitor performance and retrain as needed
 
-## 📚 Additional Resources
+## Additional Resources
 
 ### MLflow Documentation
 - [MLflow Official Documentation](https://mlflow.org/docs/latest/index.html)
@@ -224,7 +224,7 @@ Use `churn_model_training.ipynb` to:
 - [XGBoost Documentation](https://xgboost.readthedocs.io/)
 - [SHAP Documentation](https://shap.readthedocs.io/)
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/new-feature`)
