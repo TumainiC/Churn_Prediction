@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Local History for Visual Studio Code
+.history/
+
+
+# MLflow specific
+mlruns/
+mlartifacts/
+artifacts/
+models/
+
+# temporary
+temp/
