@@ -139,18 +139,23 @@ jupyter notebook
 ## Model Performance
 
 ### Algorithms Tested
-| Algorithm | Accuracy | Precision | Recall | F1-Score |
-|-----------|----------|-----------|---------|----------|
-| Random Forest | 0.847 | 0.756 | 0.632 | 0.688 |
-| XGBoost | 0.851 | 0.768 | 0.645 | 0.701 |
-| LightGBM | 0.849 | 0.761 | 0.638 | 0.694 |
-| Logistic Regression | 0.834 | 0.741 | 0.598 | 0.662 |
+| Algorithm | Accuracy | Precision | Recall | F1-Score | AUC-ROC |
+|-----------|----------|-----------|---------|----------|---------|
+| Logistic Regression (Tuned) | 0.8087 | 0.6598 | 0.5750 | 0.6145 | 0.8476 |
+| Logistic Regression | 0.8087 | 0.6598 | 0.5750 | 0.6145 | 0.8469 |
+| Random Forest | 0.7973 | 0.6422 | 0.5321 | 0.5820 | 0.8377 |
+| XGBoost | 0.7831 | 0.6041 | 0.5286 | 0.5638 | 0.8383 |
+| LightGBM | 0.7860 | 0.6098 | 0.5357 | 0.5703 | 0.8442 |
+
+*Results based on validation set performance. Models ranked by weighted score (60% Recall + 40% AUC-ROC).*
 
 ### Key Insights
 - **Top Predictors**: Contract type, tenure, monthly charges, internet service
 - **Churn Patterns**: Month-to-month contracts have highest churn rates
 - **Feature Importance**: Financial factors (charges) and service tenure are critical
-- **Model Recommendation**: XGBoost with hyperparameter tuning
+- **Model Recommendation**: Logistic Regression (Tuned) - Best balance of recall and AUC-ROC
+- **Best Churn Detection**: Logistic Regression achieves 57.5% recall with 84.8% AUC-ROC
+- **Weighted Performance**: Tuned model achieves 0.6840 weighted score (60% Recall + 40% AUC-ROC)
 
 ## MLflow Commands Reference
 
